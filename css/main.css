@@ -29,6 +29,10 @@ h2 {
   text-align: center;
 }
 
+h2 {
+  border-bottom: 2px solid gray;
+}
+
 p {
   margin: 0;
   padding: 1rem;
@@ -37,13 +41,12 @@ p {
 a {
     color: #ffb703;
   }
-  
+
 img {
   display: block;
   float: right; 
-  max-width: 250px;
-  max-height: 230px;
-  margin-top: -4.5em;
-  margin-left: -2em;
+  max-height: 350px;
+  margin-top: auto;
+  margin-left: auto;
   border-radius: 5%;  
 }
