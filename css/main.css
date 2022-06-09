@@ -39,8 +39,12 @@ p {
 }
 
 a {
-    color: #ffb703;
+    color: #e63946;
   }
+
+footer a{
+  color: #f8f9fa;
+} 
 
 img {
   display: block;
