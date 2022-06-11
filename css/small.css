@@ -47,10 +47,9 @@ footer a{
 } 
 
 img {
-  display: block;
-  float: right; 
+  /* display: block; */
   max-height: 350px;
-  margin-top: auto;
-  margin-left: auto;
-  border-radius: 5%;  
 }
+
+/*margin-top: auto;*/
+  /*margin-left: auto;/*
