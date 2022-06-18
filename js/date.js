@@ -28,7 +28,7 @@ let days = [
   let monthName = months[today.getMonth()];
   let year = today.getFullYear();
   
-  let fullDate = dayName + ", " + monthName + " " + today.getDate() + ", " + year;
+  let fullDate = dayName + ", " + today.getDate() + " " + monthName + ", " + year;
   
   document.getElementById("currentDate").textContent = fullDate;
   document.getElementById("currentYear").textContent = year;

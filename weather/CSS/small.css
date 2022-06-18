@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+header,
+footer {
+  background-color: #219ebc;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+body {
+  background-size: cover;
+  margin: 10px auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+main {
+  min-height: 350px;
+  background-color: white;
+}
+
+h1,h2,h3,h4 {
+  font-family: "Mate Sc", serif;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #264653;
+}
+
+h1 {
+  font-family: "Mate Sc", serif;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  border-bottom: 2px solid #219ebc;
+}
+
+p {
+  margin: 0;
+  padding: 1rem;
+}
+
+nav li {
+    display: none;
+} 
+
+nav {
+  margin: 0 auto;
+  background-color: #264653;
+  margin-top: -1em;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    text-align: center;
+}
+
+nav ul li a {
+   display: block;
+   color: #fff;
+   text-align: center;
+   padding: 0.75rem;
+   text-decoration: none;
+   font-size: 1rem;
+}
+
+footer a{
+  color: white;
+} 
+
+img {
+  /* display: block; */
+  max-height: 450px;
+}
