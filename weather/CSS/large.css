@@ -5,4 +5,13 @@
 	nav a {
 		font-size: 1.1rem;
 	}
+
+    .navigation li:first-child {
+		display: none;
+	}
+
+	main {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 }
