@@ -136,6 +136,6 @@ img {
   padding: 15px;
   background-color: #eee;
   color: #444;
-  font-style: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: left;
 }
