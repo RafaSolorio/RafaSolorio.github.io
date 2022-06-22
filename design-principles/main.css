@@ -57,3 +57,7 @@ img {
   max-height: 850px;
   padding-top: 2em;
 }
+
+footer p a{
+  color: white;
+}
