@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.3em) {
+@media only screen and (min-width: 720px) {
     /*nav {
         display: flex;
         margin-top: -1em;
@@ -43,5 +43,13 @@
 	main {
 		margin-left: 1em;
 		margin-right: 1em;
+	}
+
+	.weather-summary {
+		position: static;
+	}
+	.forecastdiv {
+		display: flex;
+		flex-flow: row wrap;
 	}
 }
