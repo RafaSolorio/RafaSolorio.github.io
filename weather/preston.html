@@ -1,48 +1,53 @@
 <!doctype html>
 <html lang="en-us">
-    <head>  
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Rafael Solorio">
-        <meta name="description"
-          content="Weather website">
-        <title>Preston Town Page</title>
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="CSS/large.css">
-        <link rel="stylesheet" href="CSS/medium.css">
-        <link rel="stylesheet" href="CSS/small.css">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Rafael Solorio">
+      <meta name="description"
+        content="Weather website">
+      <title>Preston Town Page</title>
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="CSS/large.css">
+      <link rel="stylesheet" href="CSS/medium.css">
+      <link rel="stylesheet" href="CSS/small.css">
     </head>   
     <body>
+        <div id="banner">
+          <p>Preston Pancakes in the Park!</p>
+          <p>9:00 a.m. Saturday at the city park.</p>
+        </div>
         <header>      
           <div class="logo-box"><a href="preston.html"><img src="images/logo.JPG" width="120" alt="Weather Site logo"></a></div>  
           <h1>The Weather News</h1>
           <div class="motto">Weather news for your life.</div>
         </header>
         <nav>
-            <ul class="navigation">
-              <li><a href="#" onclick="toggleMenu('responsive')">&#9776; Menu</a></li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Preston</a></li>
-              <li><a href="#">Soda Springs</a></li>
-              <li><a href="#">Fish Haven</a></li>
-              <li><a href="#">Storm Center</a></li>
-              <li><a href="#">Gallery</a></li>
-            </ul>
+          <ul class="navigation responsive">
+            <li id="hamburger-menu"><a href="#" onclick="toggleMenu('responsive')">&#9776; Menu</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
         </nav>
         <main>
             <h2>Preston Idaho</h2>
             <div class="herodiv">
-              <div class="hero-img">
+              <picture>
                 <img src="images/townJPG.JPG" alt="Picture of a town">
-                <div class="weather-summary">
-                  <h3>Weather summary</h3>
-                  <div class="right">Currently:</div><div class="left">Sunny</div>
-                  <div class="right">High:</div><div class="left">74°F</div>
-                  <div class="right">Wind Chill:</div><div class="left">°F</div>
-                  <div class="right">Humidity:</div><div class="left">67%</div>
-                  <div class="right">Wind Speed:</div><div class="left">5 mph</div>
-                </div>
-              </div>
+              </picture>
+              <section class="weather-summary">
+                <h3>Weather summary</h3>
+                <div class="right">Currently:</div><div class="left">Sunny</div>
+                <div class="right">High:</div><div class="left">74°F</div>
+                <div class="right">Wind Chill:</div><div class="left">°F</div>
+                <div class="right">Humidity:</div><div class="left">67%</div>
+                <div class="right">Wind Speed:</div><div class="left">5 mph</div>
+              </section>
+              
             </div>
             <div class="forecastdiv">
               <div clas="Wed">
@@ -94,9 +99,9 @@
                 <p>theweathernews@twn.com</p>
               </div>
               <div class="socialmedia">
-                <img src="images/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook icon">
-                <img src="images/294709_circle_twitter_icon.png" alt="Twitter icon">
-                <img src="images/4375153_logo_whatsapp_icon.png" alt="Whatsapp icon">
+                <a href="#"><img src="images/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook icon"></a>
+                <a href="#"><img src="images/294709_circle_twitter_icon.png" alt="Twitter icon"></a>
+                <a href="#"><img src="images/4375153_logo_whatsapp_icon.png" alt="Whatsapp icon"></a>
               </div>
             </div>
         </main>

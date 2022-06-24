@@ -27,10 +27,12 @@
 	.navigation a {
 		text-align: center;
 	}
-	.navigation li:first-child {
+	.navigation.responsive li:first-child {
 		display: none;
 	}
-
+	/*#hamburger-menu{
+		display: none;
+	}*/
 	.navigation li {
 		display: block; /* change state in small view */
 		flex: 1 1 auto;
@@ -45,11 +47,16 @@
 		margin-right: 1em;
 	}
 
-	.weather-summary {
-		position: static;
+	.herodiv picture img{
+		display: block;
+		margin: 0;
+		width: 100%;
 	}
 	.forecastdiv {
 		display: flex;
 		flex-flow: row wrap;
+	}
+	.weather-summary {
+		display: block;
 	}
 }
