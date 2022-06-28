@@ -230,11 +230,7 @@ picture.herodiv {
   float: right;
   margin-right: 30px;
 }
-.clearfix:after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 .contact-info {
   margin-top: 1em;
   position: relative;
