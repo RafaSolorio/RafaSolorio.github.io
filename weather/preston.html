@@ -36,16 +36,18 @@
         <main>
             <h2>Preston Idaho</h2>
             <div class="herodiv">
-              <picture>
-                <img src="images/townJPG.JPG" alt="Picture of a town">
+              <picture>  
+                <source media="max-width: 500px)" srcset="images/wdd230_franklin_500">
+                <source media="max-width: 800px)" srcset="images/wdd230_franklin_800">       
+                <img src="images/wdd230_franklin_1100.jpg" alt="Picture of a town">
               </picture>
               <section class="weather-summary">
                 <h3>Weather summary</h3>
                 <div class="right">Currently:</div><div class="left">Sunny</div>
-                <div class="right">High:</div><div class="left">74°F</div>
-                <div class="right">Wind Chill:</div><div class="left">°F</div>
+                <div class="right">High:</div><div class="left" id="temperature">74</div><div id="lf">°F</div>
+                <div class="right">Wind Chill:</div><div class="left" id="wind-chill"></div><div id="f">°F</div>
                 <div class="right">Humidity:</div><div class="left">67%</div>
-                <div class="right">Wind Speed:</div><div class="left">5 mph</div>
+                <div class="right">Wind Speed:</div><div class="left" id="wind-speed">5</div><div id="mph">mph</div>
               </section>
               
             </div>
@@ -76,7 +78,7 @@
                 <p>Cloudy</p>
               </div>
             </div>
-            <div class="article">
+            <div class="article" class="clearfix">
               <h3>Founders Day Fresco</h3>
               <p>By Rafael Solorio</p>
               <img src="images/rsz_people-g53823293c_640.jpg" alt="People talking">
@@ -111,5 +113,6 @@
         </footer>
         <script src="../js/date.js"></script>
         <script src="js/toggle.js"></script>
+        <script src="js/windchill.js"></script>
     </body>
 </html>

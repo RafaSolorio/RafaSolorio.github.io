@@ -128,8 +128,8 @@ footer a{
   color: white;
 } 
 
-.hero-img img{
-  max-width: 1200px;
+.hero-img picture img{
+  max-width: 100%;
 }
 
 /*.section {
@@ -174,6 +174,27 @@ footer a{
   font-size: 1.5rem;
   color: #fcd573;
 }
+#lf {
+  position: relative;
+  left: 12.2rem;
+  top: -3.4rem;
+  font-size: 1.5rem;
+  color: #fcd573;
+}
+#f {
+  position: relative;
+  left: 12.2rem;
+  top: -1.8rem;
+  font-size: 1.5rem;
+  color: #fcd573;
+}
+#mph {
+  position: relative;
+  left: 11.6rem;
+  top: -3.4rem;
+  font-size: 1.5rem;
+  color: #fcd573;
+}
 .right {
   color: white;
   font-size: 1.5rem;
@@ -206,6 +227,11 @@ footer a{
 .article img {
   float: right;
   margin-right: 30px;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .contact-info {
   margin-top: 1em;
