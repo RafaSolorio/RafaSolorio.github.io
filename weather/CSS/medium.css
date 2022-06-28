@@ -58,5 +58,6 @@
 	}
 	.weather-summary {
 		display: block;
+		position: static;
 	}
 }
