@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Rafael Solorio">
+      <meta name="description"
+        content="Weather website">
+      <title>Preston Town Page</title>
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="CSS/large.css">
+      <link rel="stylesheet" href="CSS/medium.css">
+      <link rel="stylesheet" href="CSS/small.css">
+      <link rel="stylesheet" href="lesson-4/lazyload.css">
+    </head>   
+    <body>
+        <div id="banner">
+          <p>Preston Pancakes in the Park!</p>
+          <p>9:00 a.m. Saturday at the city park.</p>
+        </div>
+        <header>      
+          <div class="logo-box"><a href="preston.html"><img src="images/logo.JPG" width="120" alt="Weather Site logo"></a></div>  
+          <h1>The Weather News</h1>
+          <div class="motto">Weather news for your life.</div>
+        </header>
+        <nav>
+          <ul class="navigation responsive">
+            <li id="hamburger-menu"><a href="#" onclick="toggleMenu('responsive')">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html" class="active">Gallery</a></li>
+          </ul>
+        </nav>
+        <main>        
+          <h2>Weather Gallery</h2>
+          <picture>        
+            <img src="https://via.placeholder.com/350x256" data-src="images/rsz_1cloudy_australia.jpg" alt="Cloudy day">
+          </picture>
+
+          <picture>        
+            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/1/300/400" alt="laptop">
+          </picture>
+          
+          <picture>        
+            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/10/300/400" alt="forest">
+          </picture>
+
+          <picture>        
+            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/30/300/400" alt="cup">
+          </picture>
+
+          <picture>        
+            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/40/300/400" alt="kitten">
+          </picture>
+
+          <picture>        
+            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/300/400" alt="random image">
+          </picture>
+        </main>
+        <footer>
+          <p>&copy;The Weather News | BYU-I Online Learning | Rafael Solorio</p>
+          <span id="currentDate"></span>
+        </footer>
+        <script src="../js/date.js"></script>
+        <script src="js/toggle.js"></script>
+        <script src="js/windchill.js"></script>
+        <script>windChill();</script>
+        <script src="lesson-4/lazyload.js"></script>
+    </body>
+</html>
