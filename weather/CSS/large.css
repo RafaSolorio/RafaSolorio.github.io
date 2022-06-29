@@ -20,4 +20,45 @@
 		margin-left: 1em;
 		margin-right: 1em;
 	}
+
+	.img-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#cloudy {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	#lightning {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	#rainbow {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	#sunny {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	#hurricane {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	#snow {
+		grid-column: 3;
+		grid-row: 2;
+	}
+	#windy {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	#rain {
+		grid-column: 2;
+		grid-row: 3;
+	}
+	#haze {
+		grid-column: 3;
+		grid-row: 3;
+	}
 }

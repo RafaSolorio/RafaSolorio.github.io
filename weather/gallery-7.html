@@ -11,7 +11,6 @@
       <link rel="stylesheet" href="CSS/large.css">
       <link rel="stylesheet" href="CSS/medium.css">
       <link rel="stylesheet" href="CSS/small.css">
-      <link rel="stylesheet" href="lesson-4/lazyload.css">
     </head>   
     <body>
         <div id="banner">
@@ -36,29 +35,52 @@
         </nav>
         <main>        
           <h2>Weather Gallery</h2>
-          <picture>        
-            <img src="https://via.placeholder.com/350x256" data-src="images/rsz_1cloudy_australia.jpg" alt="Cloudy day">
-          </picture>
+          <div class="img-grid">
+            <picture id="cloudy">        
+              <img src="https://via.placeholder.com/350x233" data-src="images/rsz_1cloudy_australia.jpg" alt="Cloudy day">
+              <figcaption>Cloudy day in Australia</figcaption>
+            </picture>
 
-          <picture>        
-            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/1/300/400" alt="laptop">
-          </picture>
-          
-          <picture>        
-            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/10/300/400" alt="forest">
-          </picture>
+            <picture id="lightning">        
+              <img src="https://via.placeholder.com/350x233" data-src="images/rsz_1lightning_toronto.jpg" alt="Lightning">
+              <figcaption>Lightning over toronto</figcaption>
+            </picture>
 
-          <picture>        
-            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/30/300/400" alt="cup">
-          </picture>
+            <picture id="rainbow">        
+              <img src="https://via.placeholder.com/350x188" data-src="images/rsz_rainbow_brazil.jpg" alt="A rainbow">
+              <figcaption>A rainbow in Brazil</figcaption>
+            </picture>
 
-          <picture>        
-            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/id/40/300/400" alt="kitten">
-          </picture>
+            <picture id="sunny">        
+              <img src="https://via.placeholder.com/350x233" data-src="images/rsz_sunny.JPG" alt="Sunny day">
+              <figcaption>Sunny day in San Francisco</figcaption>
+            </picture>
 
-          <picture>        
-            <img src="https://via.placeholder.com/350x400" data-src="https://picsum.photos/300/400" alt="random image">
-          </picture>
+            <picture id="hurricane">        
+              <img src="https://via.placeholder.com/350x234" data-src="images/rsz_nasa.JPG" alt="Hurricane">
+              <figcaption>Hurricane over Yemen</figcaption>
+            </picture>
+
+            <picture id="snow">        
+              <img src="https://via.placeholder.com/350x230" data-src="images/rsz_1grece_road_snow.jpg" alt="Snow on the road">
+              <figcaption>Road in Grece covered in snow</figcaption>
+            </picture>
+
+            <picture id="windy">        
+              <img src="https://via.placeholder.com/350x197" data-src="images/rsz_windy.jpg" alt="Windy day">
+              <figcaption>Windy day in Maldives</figcaption>
+            </picture>
+
+            <picture id="rain">        
+              <img src="https://via.placeholder.com/350x234" data-src="images/rsz_1rain_kyoto.jpg" alt="Raining in Kyoto">
+              <figcaption>Raining in Kyoto</figcaption>
+            </picture>
+
+            <picture id="haze">        
+              <img src="https://via.placeholder.com/350x263" data-src="images/rsz_haze_kuala.jpg" alt="Haze in the city">
+              <figcaption>Haze surrounding Kuala Lumpur</figcaption>
+            </picture>
+          </div>
         </main>
         <footer>
           <p>&copy;The Weather News | BYU-I Online Learning | Rafael Solorio</p>
@@ -67,7 +89,6 @@
         <script src="../js/date.js"></script>
         <script src="js/toggle.js"></script>
         <script src="js/windchill.js"></script>
-        <script>windChill();</script>
-        <script src="lesson-4/lazyload.js"></script>
+        <script src="js/lazyload.js" defer></script>
     </body>
 </html>

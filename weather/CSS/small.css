@@ -28,6 +28,34 @@ main {
   margin: 0 auto;
 }
 
+img[data-src] {
+  filter: blur(0.2em);
+}
+  
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+.img-grid {
+  background-color: #8ac3d2;
+  align-items: center;
+	justify-items: center;
+}
+.img-grid picture{
+  margin: 0 auto;
+  margin-bottom: 1.3em;
+  align-self: center;
+  justify-self: center;
+}
+
+.img-grid picture:hover{
+  box-shadow: 8px 8px 15px grey;
+}
+
+.img-grid figcaption{
+  text-align: center;
+  font-size: 0.8em;
+}
 nav {
   margin: 0 auto;
   background-color: #264653;
