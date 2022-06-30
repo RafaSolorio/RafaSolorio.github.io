@@ -46,10 +46,6 @@ img {
   justify-self: center;
 }
 
-.img-grid picture:hover{
-  box-shadow: 8px 8px 15px grey;
-}
-
 .img-grid figcaption{
   text-align: center;
   font-size: 0.8em;
