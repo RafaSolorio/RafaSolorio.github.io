@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Rafael Solorio">
+      <meta name="description"
+        content="Storm Center">
+      <title>Storm Center Page</title>
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="../weather/CSS/large.css">
+      <link rel="stylesheet" href="../weather/CSS/medium.css">
+      <link rel="stylesheet" href="../weather/CSS/small.css">
+    </head>   
+    <body>
+        <header>      
+          <div class="logo-box"><a href="preston.html"><img src="../images/logo.JPG" width="120" alt="Weather Site logo"></a></div>  
+          <h1>The Weather News</h1>
+          <div class="motto">Weather news for your life.</div>
+          <nav>
+            <ul class="navigation responsive">
+              <li id="hamburger-menu"><a href="#" onclick="toggleMenu('responsive')">&#9776; Menu</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="preston.html">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="#" class="active">Storm Center</a></li>
+              <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>        
+            <h2>Report a storm</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <label class="top">Full Name*<input type="text" name="fulname" minlength="5" pattern="[A-Z a-z]+" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="example@gmail.com"></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1234555123" required></label>
+                    <label class="top">Zip Code*<input type="number" name="zipcode" pattern="[0-9]{5}" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm information</legend>
+                    <label class="top">Storm Date<input type="date" name="completeDate"></label>
+                    <label class="top" for="stormList">Storm Type</label>
+                    <input list="storms" name="stormtype" id="stormList">
+                    <datalist id="storms">
+                      <option value="Flash Flood">
+                      <option value="Hail">
+                      <option value="Hurricane">
+                      <option value="Thunderstorm">
+                      <option value="Tornado">
+                    </datalist>
+
+                    <label class="flexly" for="rating">Storm Severity (1 to 10):&nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+
+                    <label class="top">Storm Region
+                        <select name="subject">
+                            <option>Select region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Additional Information</legend>
+                    <div>Are you in danger?</div>
+                    <label class="sbs"><input type="radio" name="in-danger" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="in-danger" value="maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name="in-danger" value="no">No</label>
+                    
+                    <label class="sbs" for="comments">Additional Comments</label>
+                    <textarea id="comments" name="msg" maxlength="140" rows="5"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Report Storm" class="submitBtn">
+            </form>
+        </main>
+        <footer>
+          <p>&copy;The Weather News | BYU-I Online Learning | Rafael Solorio</p>
+          <span id="currentDate"></span>
+        </footer>
+        <script src="../js/date.js"></script>
+        <script src="../weather/js/toggle.js"></script>
+    </body>
+</html>

@@ -9,3 +9,7 @@ function displayBanner() {
     }
     console.log(dayOfWeek);
 }
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
