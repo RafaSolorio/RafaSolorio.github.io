@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Rafael Solorio">
+      <meta name="description"
+        content="Weather website">
+      <title>Preston Town Page</title>
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="CSS/large.css">
+      <link rel="stylesheet" href="CSS/medium.css">
+      <link rel="stylesheet" href="CSS/small.css">
+    </head>   
+    <body>
+        <header>      
+          <div class="logo-box"><a href="preston.html"><img src="../images/logo.JPG" width="120" alt="Weather Site logo"></a></div>  
+          <h1>The Weather News</h1>
+          <div class="motto">Weather news for your life.</div>
+          <nav>
+            <ul class="navigation responsive">
+              <li id="hamburger-menu"><a href="#" onclick="toggleMenu('responsive')">&#9776; Menu</a></li>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="https://rafasolorio.github.io/weather/preston.html">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="https://rafasolorio.github.io/lesson-4/stormcenter.html">Storm Center</a></li>
+              <li><a href="https://rafasolorio.github.io/weather/gallery-7.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+            <div class="towns"></div>
+        </main>
+        <footer>
+          <p>&copy;The Weather News | BYU-I Online Learning | Rafael Solorio</p>
+          <span id="currentDate"></span>
+        </footer>
+        <script src="../js/date.js"></script>
+        <script src="JS/towns.js"></script>
+        <script src="../weather/js/toggle.js"></script>
+    </body>
+</html>
