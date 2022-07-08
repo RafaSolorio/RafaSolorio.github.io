@@ -22,13 +22,34 @@
 	section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	}
 
+	section img {
+		padding-top: 2rem;
+		padding-left: 1rem;
+	}
 	.Soda.Springs {
 		grid-column: 1;
 	}
 
 	.Soda.Springsimg {
 		grid-column: 2;
+		grid-row: 1 / -1;
+	}
+
+	.Fish.Haven {
+		grid-column: 2;
+	}
+	.Fish.Havenimg {
+		grid-column: 1;
+		grid-row: 1 / -1;
+	}
+	.Preston {
+		grid-column: 1;
+	}
+	.Prestonimg {
+		grid-column: 2;
+		grid-row: 1 / -1;
 	}
 }

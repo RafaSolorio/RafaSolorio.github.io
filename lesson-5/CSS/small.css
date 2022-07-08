@@ -25,15 +25,6 @@ main {
   margin: 0 auto;
 }
 
-img[data-src] {
-  filter: blur(0.2em);
-}
-  
-img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-}
-
 nav {
   margin-top: 1em;
   margin-bottom: 0;
@@ -78,9 +69,10 @@ nav a:hover{
 h1,h2,h3,h4 {
   font-family: "Mate Sc", serif;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
   text-align: center;
   color: #264653;
+  margin: 0 auto;
 }
 
 h1 {
@@ -120,6 +112,8 @@ footer a{
 .towns {
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 section {
@@ -132,7 +126,7 @@ section {
   font-family: "Roboto", sans-serif;
 }
 
-#mottoT {
+.mottoT {
   font-style: italic;
   margin-top: -1.3rem;
   color: rgb(42, 42, 42);
@@ -144,6 +138,7 @@ section p {
   padding: 1rem;
   font-size: 1em;
   color: rgb(53, 52, 52);
+  text-align: center;
 }
 .active {
   background-color: #219ebc;
@@ -152,5 +147,24 @@ section p {
 
 p {
   margin: 0;
-  padding: 1rem;
+}
+
+section img{
+  width: 100%;
+  max-width: 95%;
+}
+
+.news {
+  background-color: #fcd573;
+  max-width: 89%;
+  margin: 0 auto;
+}
+
+.new {
+  text-decoration: none;
+  color: black;
+}
+
+figure img {
+  max-width: 98%;
 }
