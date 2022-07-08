@@ -43,6 +43,7 @@ fetch(requestURL)
                 image.setAttribute('src', "https://via.placeholder.com/400x400");
                 image.setAttribute('data-src', towns[i].photo);
                 image.setAttribute('class', towns[i].name + 'img');
+                image.setAttribute('alt', towns[i].name);
                 card.appendChild(image);
               
                 document.querySelector('div.towns').appendChild(card);
