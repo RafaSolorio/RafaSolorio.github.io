@@ -22,7 +22,6 @@ body {
 main {
   /*min-height: 350px;*/
   background-color: white;
-  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -84,30 +83,16 @@ h1,h2,h3,h4 {
   color: #264653;
 }
 
-h3,h4 {
-  font-family: "Mate Sc", serif;
-  margin: 0;
-  padding: 1rem;
-  text-align: left;
-  color: #264653;
-}
-
 h1 {
   font-family: "Mate Sc", serif;
   margin: 0;
   padding: 1rem;
-  text-align: center;
   color: white;
   font-size: 2em;
 }
 .logo-box {
   justify-self: left;
 }
-p {
-  margin: 0;
-  padding: 1rem;
-}
-
 
 /*nav li {
     display: none;
@@ -132,19 +117,40 @@ footer a{
   color: white;
 } 
 
-/*.section {
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+section {
   margin: 10px auto;
   margin-left: 10px;
   margin-right: 10px;
-  border: 1px solid #000;
   padding: 15px;
-  background-color: #eee;
+  background-color: rgb(146, 191, 203);
   color: #444;
   font-family: "Roboto", sans-serif;
-  text-align: left;
-}*/
+}
 
+#mottoT {
+  font-style: italic;
+  margin-top: -1.3rem;
+  color: rgb(42, 42, 42);
+  text-align: center;
+}
+
+section p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1em;
+  color: rgb(53, 52, 52);
+}
 .active {
   background-color: #219ebc;
   border: 1px solid #264653;
+}
+
+p {
+  margin: 0;
+  padding: 1rem;
 }
