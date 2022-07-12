@@ -22,9 +22,9 @@ fetch(apiURLf)
             forecastClass[index].textContent = element.weather[0].main;
             const imagesrc = 'https://openweathermap.org/img/w/' + element.weather[0].icon + '.png';
             const desc = element.weather[0].description;
-            index +=1;
             iconClass[index].setAttribute('src', imagesrc);  
             iconClass[index].setAttribute('alt', desc);
+            index += 1;
         }
     });
   });
