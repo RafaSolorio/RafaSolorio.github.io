@@ -214,7 +214,7 @@ picture.herodiv {
   font-size: 1.5rem;
   color: #fcd573;
 }
-#f {
+.f {
   position: relative;
   left: 12.2rem;
   top: -3.25rem;
@@ -264,7 +264,12 @@ picture.herodiv {
   float: right;
   margin-right: 30px;
 }
-
+#by {
+  color: rgb(55, 55, 55);
+  font-size: 1.47rem;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
 .contact-info {
   margin-top: 1em;
   position: relative;

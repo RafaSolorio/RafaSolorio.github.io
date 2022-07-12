@@ -2,7 +2,6 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     document.getElementById('currently').textContent = jsObject.weather[0].main;
     document.getElementById('temperature').textContent = jsObject.main.temp_max;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
@@ -13,7 +12,6 @@ const apiURLf = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&app
 fetch(apiURLf)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     const dayList = jsObject.list;
 
     let index=0;
@@ -29,5 +27,4 @@ fetch(apiURLf)
             iconClass[index].setAttribute('alt', desc);
         }
     });
-    console.log(day)
   });
