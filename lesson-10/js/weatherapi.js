@@ -3,10 +3,31 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.getElementById('current-temp').textContent = jsObject.main.temp;
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    document.getElementById('icon').setAttribute('alt', desc);
+    document.getElementById('currently').textContent = jsObject.weather[0].main;
+    document.getElementById('temperature').textContent = jsObject.main.temp_max;
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementById('wind-speed').textContent = jsObject.wind.speed;
+  });
+
+const apiURLf = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=653115c2b12015a06e90d44cf9a1fe16&units=imperial';
+fetch(apiURLf)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    const dayList = jsObject.list;
+
+    let index=0;
+    dayList.forEach(element => {
+        if (element.dt_txt.includes("18:00:00")){
+            const iconClass = document.getElementsByClassName('iconf');
+            const forecastClass = document.getElementsByClassName('forecast');
+            forecastClass[index].textContent = element.weather[0].main;
+            const imagesrc = 'https://openweathermap.org/img/w/' + element.weather[0].icon + '.png';
+            const desc = element.weather[0].description;
+            index +=1;
+            iconClass[index].setAttribute('src', imagesrc);  
+            iconClass[index].setAttribute('alt', desc);
+        }
+    });
+    console.log(day)
   });

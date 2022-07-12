@@ -43,38 +43,38 @@
             </picture>
             <div class="weather-summary">
               <h3>Weather summary</h3>
-              <div class="right">Currently:</div><div class="left">Sunny</div>
-              <div class="right">High:</div><div class="left" id="temperature">74</div><div id="lf">°F</div>
+              <div class="right">Currently:</div><div class="left" id="currently">Sunny</div>
+              <div class="right">High:</div><div class="left" id="temperature"></div><div id="lf">°F</div>
               <div class="right">Wind Chill:</div><div class="left" id="wind-chill"></div><div id="f">°F</div>
-              <div class="right">Humidity:</div><div class="left">67%</div>
-              <div class="right">Wind Speed:</div><div class="left" id="wind-speed">5</div><div id="mph">mph</div>
+              <div class="right">Humidity:</div><div class="left" id="humidity"></div><div id="f">%</div>
+              <div class="right">Wind Speed:</div><div class="left" id="wind-speed"></div><div id="mph">mph</div>
             </div>
           </div>
           <div class="forecastdiv">
             <div class="Wed">
               <h4>Wed</h4>
-              <img src="../weather/images/cloudy.png" alt="Cloudy">
-              <h5>Cloudy</h5>
+              <img class="iconf" src="" alt="">
+              <h5 class="forecast"></h5>
             </div>
             <div class="Thu">
               <h4>Thu</h4>
-              <img src="../weather/images/sunny.png" alt="Sunny">
-              <h5>Sunny</h5>
+              <img class="iconf" src="" alt="">
+              <h5 class="forecast"></h5>
             </div>
             <div class="Fri">
               <h4>Fri</h4>
-              <img src="../weather/images/sunny.png" alt="Sunny">
-              <h5>Sunny</h5>
+              <img class="iconf" src="" alt="">
+              <h5 class="forecast"></h5>
             </div>
             <div class="Sat">
               <h4>Sat</h4>
-              <img src="../weather/images/sunny.png" alt="Sunny">
-              <h5>Sunny</h5>
+              <img class="iconf" src="" alt="">
+              <h5 class="forecast"></h5>
             </div>
             <div class="Sun">
               <h4>Sun</h4>
-              <img src="../weather/images/cloudy.png" alt="Cloudy">
-              <h5>Cloudy</h5>
+              <img class="iconf" src="" alt="">
+              <h5 class="forecast"></h5>
             </div>
           </div>
           <div class="article">
@@ -107,7 +107,7 @@
           </div>
         </main>
         <footer>
-          <p>&copy;The Weather News | BYU-I Online Learning | Rafael Solorio</p>
+          <p>&copy;The Weather News | <a href="https://openweathermap.org/">Weather data source: OpenWeatherMap</a>  | Rafael Solorio</p>
           <span id="currentDate"></span>
         </footer>
         <script src="../js/date.js"></script>

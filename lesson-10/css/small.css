@@ -149,6 +149,10 @@ nav ul {
 
 footer a{
   color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fcd573;
 } 
 
 picture img{
@@ -168,11 +172,11 @@ picture img{
 }*/
 .herodiv {
   margin: 10px auto;
-	position: relative;
 }
 picture.herodiv {
   display: block;
   width: 96%;
+  /*position: relative;*/
 }
 .active {
   background-color: #219ebc;
@@ -180,43 +184,47 @@ picture.herodiv {
 }
 
 .weather-summary {
-  position: absolute;
+  /*position: absolute;*/
   top: 5rem;
   left: 1rem;
   height: 385px;
   background-color: #219ebc;
   opacity: 0.95;
+  max-width: 98%;
 }
 .weather-summary h3{
   border-bottom: 2px solid white;
   color: white
 }
+.weather-summary div{
+  margin-bottom: -0.1em;
+}
 
 .left {
   position: relative;
-  left: 10rem;
+  left: 8.7rem;
   top: -1.6rem;
   font-size: 1.5rem;
   color: #fcd573;
 }
 #lf {
   position: relative;
-  left: 12.2rem;
-  top: -3.4rem;
+  left: 12.5rem;
+  top: -3.2rem;
   font-size: 1.5rem;
   color: #fcd573;
 }
 #f {
   position: relative;
   left: 12.2rem;
-  top: -3.3rem;
+  top: -3.25rem;
   font-size: 1.5rem;
   color: #fcd573;
 }
 #mph {
   position: relative;
-  left: 11.6rem;
-  top: -3.4rem;
+  left: 12.7rem;
+  top: -3.3rem;
   font-size: 1.5rem;
   color: #fcd573;
 }
