@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Rafael Solorio">
+      <meta name="description"
+        content="Weather website">
+      <title>Preston Town Page</title>
+      <link rel="stylesheet" href="home-page/CSS/small.css">
+      <link rel="stylesheet" href="home-page/CSS/medium.css">
+      <link rel="stylesheet" href="home-page/CSS/large.css">
+      <link rel="stylesheet" href="../css/normalize.css">
+    </head>   
+    <body>
+        <header>      
+          <div class="logo-box"><a href="preston.html"><img src="../images/logo.JPG" width="120" alt="Weather Site logo"></a></div>  
+          <h1>The Weather News</h1>
+          <div class="motto">Weather news for your life.</div>
+          <nav>
+            <ul class="navigation responsive">
+              <li id="hamburger-menu"><a href="#" onclick="toggleMenu('responsive')">&#9776; Menu</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="preston/preston.html">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="storm-center/stormcenter.html">Storm Center</a></li>
+              <li><a href="storm-center/stormcenter.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+            <div class="news">
+              <h2>Weather News</h2>
+              <figure id="tornado">
+                <a href="#"><img src="home-page/images/rsz_1mick-haupt-tumyuri6ojw-unsplash.jpg" alt="Tornado damages"></a>
+                <figcaption><a class="new" href="#">Tornado causes damage in this state</a></figcaption>
+              </figure>
+              <figure id="heat">
+                <a href="#"><img src="home-page/images/weathermap.JPG" alt="Heat map"></a>
+                <figcaption><a class="new" href="#">Excessive heat continues</a></figcaption>
+              </figure>
+              <figure id="sunscreen">
+                <a href="#"><img src="home-page/images/rsz_batch-by-wisconsin-hemp-scientific-xanilp6v_eg-unsplash.jpg" alt="Sunscreen"></a>
+                <figcaption><a class="new" href="#">Why you should use sunscreen</a></figcaption>
+              </figure>
+            </div>
+            <div class="towns"></div>
+        </main>
+        <footer>
+          <p>&copy;The Weather News | BYU-I Online Learning | Rafael Solorio | <a href="https://app.moqups.com/4twI9LjMFRpja7Kz720Cr9LGENjQDJ5s/view/page/ad64222d5">Home page wireframes</a></p>
+          <span id="currentDate"></span>
+        </footer>
+        <script src="../js/date.js"></script>
+        <script src="home-page/JS/towns.js"></script>
+        <script src="../weather/js/toggle.js"></script>
+    </body>
+</html>

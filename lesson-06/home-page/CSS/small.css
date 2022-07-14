@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+header,
+footer {
+  background-color: #219ebc;
+  color: white;
+  text-align: center;
+  /*margin: 0 auto;*/
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  justify-content: center;
+  /*flex-flow: column;*/
+}
+
+body {
+  background-size: cover;
+  margin: 10px auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+main {
+  /*min-height: 350px;*/
+  background-color: white;
+  margin: 0 auto;
+}
+
+nav {
+  margin-top: 1em;
+  margin-bottom: 0;
+  background-color: #264653;
+}
+
+nav a:hover{
+  color:#fcd573;
+}
+.navigation {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-top: -0.5em;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.responsive li {
+  display: block;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+h1,h2,h3,h4 {
+  font-family: "Mate Sc", serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #264653;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Mate Sc", serif;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+  font-size: 2em;
+}
+.logo-box {
+  justify-self: left;
+}
+
+/*nav li {
+    display: none;
+} */
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    text-align: center;
+}
+
+/*nav ul li a {
+   display: block;
+   color: #fff;
+   text-align: center;
+   padding: 0.75rem;
+   text-decoration: none;
+   font-size: 1rem;
+}*/
+
+footer a{
+  color: white;
+} 
+
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 10px auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 15px;
+  background-color: rgb(146, 191, 203);
+  color: #444;
+  font-family: "Roboto", sans-serif;
+}
+
+.mottoT {
+  font-style: italic;
+  margin-top: -1.3rem;
+  color: rgb(42, 42, 42);
+  text-align: center;
+}
+
+section p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1em;
+  color: rgb(53, 52, 52);
+  text-align: center;
+}
+.active {
+  background-color: #219ebc;
+  border: 1px solid #264653;
+}
+
+p {
+  margin: 0;
+}
+
+section img{
+  width: 100%;
+  max-width: 95%;
+}
+
+.news {
+  background-color: #fcd573;
+  max-width: 89%;
+  margin: 0 auto;
+}
+
+.new {
+  text-decoration: none;
+  color: black;
+}
+
+figure img {
+  max-width: 98%;
+}

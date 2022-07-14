@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Rafael Solorio">
+      <meta name="description"
+        content="Weather website">
+      <title>Preston Town Page</title>
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="css/large.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/small.css">
+    </head>   
+    <body>
+        <div id="banner">
+          <p>Preston Pancakes in the Park!</p>
+          <p>9:00 a.m. Saturday at the city park.</p>
+        </div>
+        <header>      
+          <div class="logo-box"><a href="preston.html"><img src="../weather/images/logo.JPG" width="120" alt="Weather Site logo"></a></div>  
+          <h1>The Weather News</h1>
+          <div class="motto">Weather news for your life.</div>
+          <nav>
+            <ul class="navigation responsive">
+              <li id="hamburger-menu"><a href="#" onclick="toggleMenu('responsive')">&#9776; Menu</a></li>
+              <li><a href="../index.html" >Home</a></li>
+              <li><a href="../preston/preston.html" class="active">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+              <li><a href="../weather/gallery-7.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <h2>Preston Idaho</h2>
+          <div class="herodiv">
+            <picture>  
+              <source media="(max-width: 500px)" srcset="../weather/images/wdd230_franklin_500.jpg">
+              <source media="(max-width: 800px)" srcset="../weather/images/wdd230_franklin_800.jpg">       
+              <img src="../weather/images/wdd230_franklin_1100.jpg" alt="Picture of a town">
+            </picture>
+            <div class="weather-summary">
+              <h3>Weather summary</h3>
+              <div class="right">Currently:</div><div class="left" id="currently">Sunny</div>
+              <div class="right">High:</div><div class="left" id="temperature"></div><div id="lf">°F</div>
+              <div class="right">Wind Chill:</div><div class="left" id="wind-chill"></div><div class="f">°F</div>
+              <div class="right">Humidity:</div><div class="left" id="humidity"></div><div class="f">%</div>
+              <div class="right">Wind Speed:</div><div class="left" id="wind-speed"></div><div id="mph">mph</div>
+            </div>
+          </div>
+          <div class="forecastdiv">
+            <div class="Wed">
+              <h4>Wed</h4>
+              <img class="iconf" src="https://via.placeholder.com/80x80" alt="icon">
+              <h5 class="forecast">forecast</h5>
+            </div>
+            <div class="Thu">
+              <h4>Thu</h4>
+              <img class="iconf" src="https://via.placeholder.com/80x80" alt="icon">
+              <h5 class="forecast">forecast</h5>
+            </div>
+            <div class="Fri">
+              <h4>Fri</h4>
+              <img class="iconf" src="https://via.placeholder.com/80x80" alt="icon">
+              <h5 class="forecast">forecast</h5>
+            </div>
+            <div class="Sat">
+              <h4>Sat</h4>
+              <img class="iconf" src="https://via.placeholder.com/80x80" alt="icon">
+              <h5 class="forecast">forecast</h5>
+            </div>
+            <div class="Sun">
+              <h4>Sun</h4>
+              <img class="iconf" src="https://via.placeholder.com/80x80" alt="icon">
+              <h5 class="forecast">forecast</h5>
+            </div>
+          </div>
+          <div class="article">
+            <h3>Founders Day Fresco</h3>
+            <p id="by">By Rafael Solorio</p>
+            <img src="../weather/images/rsz_people-g53823293c_640.jpg" alt="People talking">
+            <p>I was recently reflecting on the founders day event held at Foundation park each year. I have been taking 
+              the festical for granted and have not been properly engaging in perhaps the most popular community event of 
+              the year. In responce, I contacted Ms. Sharon by email and expressed my desire to serve on the event commitee.
+               Well, you guessed it, the phone rings almost immediately and she promptly asks me to be the event commitee chair. 
+               Literally, good grief! My appreciation for the years of dedicated, generous service of volunteers and sponsors 
+               has escalated beyond what I thought I could feel for such a thing and ...</p>
+          </div>
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <img class="map" src="../weather/images/map.JPG" alt="A map">
+            <div class="info">
+              <img src="../weather/images/2303197_destination_gps_location_map_mark_icon.png" alt="Location icon">
+              <h4>2271 Washington St, Lemon Grove, CA 91945</h4>
+              <img src="../weather/images/8726212_phone_alt_icon.png" alt="Phone icon">
+              <h4>999-9999-9999</h4>
+              <img src="../weather/images/8725938_envelope_icon.png" alt="Email icon">
+              <h4>theweathernews@twn.com</h4>
+            </div>
+            <div class="socialmedia">
+              <a href="#"><img src="../weather/images/facebooklogo_icon.png" alt="Facebook icon"></a>
+              <a href="#"><img src="../weather/images/294709_circle_twitter_icon.png" alt="Twitter icon"></a>
+              <a href="#"><img src="../weather/images/4375153_logo_whatsapp_icon.png" alt="Whatsapp icon"></a>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p>&copy;The Weather News | <a href="https://openweathermap.org/">Weather data source: OpenWeatherMap</a>  | Rafael Solorio</p>
+          <span id="currentDate"></span>
+        </footer>
+        <script src="../../js/date.js"></script>
+        <script src="js/toggle.js"></script>
+        <script src="js/weatherapi.js"></script>
+        <script src="js/windchill.js"></script>
+        <script>windChill();</script>
+    </body>
+</html>
