@@ -172,6 +172,7 @@ picture img{
 }*/
 .herodiv {
   margin: 10px auto;
+  margin-bottom: 1.5em;
 }
 picture.herodiv {
   display: block;
