@@ -56,7 +56,7 @@ nav {
   background-color: #264653;
 }
 
-nav a:hover{
+nav a:hover {
   color:#fcd573;
 }
 .navigation {
@@ -264,12 +264,20 @@ picture.herodiv {
 .article img {
   float: right;
   margin-right: 30px;
+  max-width: 98%;
 }
 #by {
   color: rgb(55, 55, 55);
   font-size: 1.47rem;
   margin-top: -1rem;
   margin-left: 1rem;
+}
+#credits{
+  color: rgb(55, 55, 55);
+  font-size: 1.47rem;
+}
+.article p a:hover{
+  color: #3e00b2;
 }
 .contact-info {
   margin-top: 1em;
@@ -323,5 +331,19 @@ picture.herodiv {
 }
 
 section {
-  background-color: #fcd573;
+  background-color: #fbd77b;
+  border: 8px solid #f3ae00;
+  margin-top: 1em;
+}
+section h3{
+  color: #14252c;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 3px solid#264653;
+  max-width: 80%;
+  padding-bottom: 0%;
+}
+section p{
+  text-align: center;
+  color: #14252c;
 }

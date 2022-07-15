@@ -322,5 +322,19 @@ picture.herodiv {
   text-align: center;
 }
 section {
-  background-color: #fcd573;
+  background-color: #fbd77b;
+  border: 8px solid #f3ae00;
+  margin-top: 1em;
+}
+section h3{
+  color: #14252c;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 3px solid#264653;
+  max-width: 80%;
+  padding-bottom: 0%;
+}
+section p{
+  text-align: center;
+  color: #14252c;
 }
