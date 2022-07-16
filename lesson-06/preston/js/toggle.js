@@ -7,7 +7,6 @@ function displayBanner() {
     if (dayOfWeek == 6) {
         document.querySelector('#banner').style.display = "block";
     }
-    console.log(dayOfWeek);
 }
 
 function adjustRating(rating) {

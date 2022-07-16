@@ -40,9 +40,12 @@ fetch(requestURL)
                 rainP.setAttribute('id', towns[i].name + 'rainfall');
                 card.appendChild(rainP);
               
-                image.setAttribute('src', "https://via.placeholder.com/400x400");
                 if (towns[i].name == 'Preston') {
-                  image.setAttribute('data-src', 'images/pioneer-historic-byway-colors-from-grace-to-preston-0296da.jpg');
+                  image.setAttribute('src', 'home-page/images/pioneer-historic-byway-colors-from-grace-to-preston-0296da.jpg');
+                }else if (towns[i].name == 'Fish Haven') {
+                  image.setAttribute('src', 'home-page/images/rsz_fish_haven.jpg');
+                } else {
+                  image.setAttribute('src', 'home-page/images/1132021048_31110188a8_w.jpg');
                 }
                 image.setAttribute('class', towns[i].name + 'img');
                 image.setAttribute('alt', towns[i].name);

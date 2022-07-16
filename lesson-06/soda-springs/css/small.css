@@ -191,14 +191,14 @@ picture.herodiv {
   height: 385px;
   background-color: #219ebc;
   opacity: 0.95;
-  max-width: 98%;
+  max-width: 99%;
 }
 .weather-summary h3{
   border-bottom: 2px solid white;
   color: white
 }
 .weather-summary div{
-  margin-bottom: -0.1em;
+  margin-bottom: -0.2em;
 }
 
 .left {
@@ -261,15 +261,18 @@ picture.herodiv {
   background-color: #aad0daf6;
   margin-top: 1em;
 }
-.article img {
-  float: right;
-  margin-right: 30px;
-}
 #by {
   color: rgb(55, 55, 55);
   font-size: 1.47rem;
   margin-top: -1rem;
   margin-left: 1rem;
+}
+#credits{
+  color: rgb(55, 55, 55);
+  font-size: 1.47rem;
+}
+.article p a:hover{
+  color: #3e00b2;
 }
 .contact-info {
   margin-top: 1em;
