@@ -41,11 +41,12 @@ fetch(requestURL)
                 card.appendChild(rainP);
               
                 image.setAttribute('src', "https://via.placeholder.com/400x400");
-                image.setAttribute('data-src', towns[i].photo);
+                if (towns[i].name == 'Preston') {
+                  image.setAttribute('data-src', 'images/pioneer-historic-byway-colors-from-grace-to-preston-0296da.jpg');
+                }
                 image.setAttribute('class', towns[i].name + 'img');
                 image.setAttribute('alt', towns[i].name);
                 card.appendChild(image);
-              
                 document.querySelector('div.towns').appendChild(card);
             }
         }
